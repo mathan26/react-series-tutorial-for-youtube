@@ -1,3 +1,5 @@
+import ConditionRenderingExample1 from "./components/condition-rendering/ConditionRenderingExample1";
+import ListandKeysExample1 from "./components/list-and-keys/ListandKeysExample1";
 import Parent from "./components/props/Parent";
 import StateManagementExample from "./components/state-managment/StateManagementExample";
 import StateManagementExample2 from "./components/state-managment/StateManagementExample2";
@@ -6,8 +8,7 @@ import StateManagementExample3 from "./components/state-managment/StateManagemen
 const App = () => {
   return (
     <div>
-      <h1>State Management in React</h1>
-      <StateManagementExample3 />
+      <ListandKeysExample1 />
     </div>
   );
 };
