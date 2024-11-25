@@ -1,4 +1,6 @@
 import ConditionRenderingExample1 from "./components/condition-rendering/ConditionRenderingExample1";
+import ControlledFormExample from "./components/forms-handling/ControlledFormExample";
+import UnControlledForms from "./components/forms-handling/UnControlledForms";
 import ListandKeysExample1 from "./components/list-and-keys/ListandKeysExample1";
 import Parent from "./components/props/Parent";
 import StateManagementExample from "./components/state-managment/StateManagementExample";
@@ -7,8 +9,8 @@ import StateManagementExample3 from "./components/state-managment/StateManagemen
 
 const App = () => {
   return (
-    <div>
-      <ListandKeysExample1 />
+    <div className="container">
+      <ControlledFormExample />
     </div>
   );
 };
