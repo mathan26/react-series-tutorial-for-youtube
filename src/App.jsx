@@ -2,6 +2,7 @@ import ConditionRenderingExample1 from "./components/condition-rendering/Conditi
 import ControlledFormExample from "./components/forms-handling/ControlledFormExample";
 import UnControlledForms from "./components/forms-handling/UnControlledForms";
 import HooksExample from "./components/hooks-explained/HooksExample";
+import UseReducerExample from "./components/hooks-explained/UseReducerExample";
 import ListandKeysExample1 from "./components/list-and-keys/ListandKeysExample1";
 import Parent from "./components/props/Parent";
 import StateManagementExample from "./components/state-managment/StateManagementExample";
@@ -11,7 +12,7 @@ import StateManagementExample3 from "./components/state-managment/StateManagemen
 const App = () => {
   return (
     <div className="container">
-      <HooksExample />
+      <UseReducerExample />
     </div>
   );
 };
