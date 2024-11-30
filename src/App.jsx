@@ -1,4 +1,7 @@
+import { useState } from "react";
 import ConditionRenderingExample1 from "./components/condition-rendering/ConditionRenderingExample1";
+import ComponentA from "./components/example-components/ComponentA";
+import ComponentB from "./components/example-components/ComponentB";
 import ControlledFormExample from "./components/forms-handling/ControlledFormExample";
 import UnControlledForms from "./components/forms-handling/UnControlledForms";
 import HooksExample from "./components/hooks-explained/HooksExample";
@@ -10,10 +13,21 @@ import StateManagementExample2 from "./components/state-managment/StateManagemen
 import StateManagementExample3 from "./components/state-managment/StateManagementExample3";
 
 const App = () => {
+  const [showFirstComponent, setFirstComponent] = useState(false);
+
   return (
-    <div className="container">
-      <UseReducerExample />
-    </div>
+    <>
+      <button
+        onClick={() => {
+          setFirstComponent(!showFirstComponent);
+        }}
+      >
+        toggleComponent
+      </button>
+      <div className="container">
+        {showFirstComponent ? <ComponentA /> : <ComponentB />}
+      </div>
+    </>
   );
 };
 
