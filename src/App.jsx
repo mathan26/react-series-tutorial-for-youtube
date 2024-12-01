@@ -11,22 +11,27 @@ import Parent from "./components/props/Parent";
 import StateManagementExample from "./components/state-managment/StateManagementExample";
 import StateManagementExample2 from "./components/state-managment/StateManagementExample2";
 import StateManagementExample3 from "./components/state-managment/StateManagementExample3";
+import ContextIndex from "./components/context-example/ContextIndex.jsx";
+import { useSnacks } from "./components/context-example/SnacksContext.jsx";
 
 const App = () => {
-  const [showFirstComponent, setFirstComponent] = useState(false);
+  // const [showFirstComponent, setFirstComponent] = useState(false);
+
+  // const context = useSnacks();
 
   return (
     <>
-      <button
-        onClick={() => {
-          setFirstComponent(!showFirstComponent);
-        }}
-      >
-        toggleComponent
-      </button>
-      <div className="container">
-        {showFirstComponent ? <ComponentA /> : <ComponentB />}
-      </div>
+      {/*<button*/}
+      {/*  onClick={() => {*/}
+      {/*    setFirstComponent(!showFirstComponent);*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  toggleComponent*/}
+      {/*</button>*/}
+      {/*<div className="container">*/}
+      {/*  {showFirstComponent ? <ComponentA /> : <ComponentB />}*/}
+      {/*</div>*/}
+      <ContextIndex />
     </>
   );
 };
