@@ -13,6 +13,7 @@ import StateManagementExample2 from "./components/state-managment/StateManagemen
 import StateManagementExample3 from "./components/state-managment/StateManagementExample3";
 import ContextIndex from "./components/context-example/ContextIndex.jsx";
 import { useSnacks } from "./components/context-example/SnacksContext.jsx";
+import SumCalculator from "./components/hooks-explained/UseMemoExample/SumCalculator.jsx";
 
 const App = () => {
   // const [showFirstComponent, setFirstComponent] = useState(false);
@@ -31,7 +32,8 @@ const App = () => {
       {/*<div className="container">*/}
       {/*  {showFirstComponent ? <ComponentA /> : <ComponentB />}*/}
       {/*</div>*/}
-      <ContextIndex />
+      {/*<ContextIndex />*/}
+        <SumCalculator/>
     </>
   );
 };
